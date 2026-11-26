@@ -21,15 +21,11 @@ class KendaraanListrik extends Kendaraan {
 }
 
 class MobilBensin extends KendaraanBensin {}
-class MobilListrik extends KendaraanListrik {
-    isiBensin(liter) {
-        throw new Error(this.nama + " tidak memakai bensin!");
-    }
-}
+class MobilListrik extends KendaraanListrik {}  
 class MotorBensin extends KendaraanBensin {}
 
 function isiSemuaBensin(daftar) {
-    daftar.forEach((x) => x.isiBensin(20));
+    daftar.forEach((x) => x.isiBensin(20)); 
 }
 
 function isiSemuaDaya(daftar) {
